@@ -1,370 +1,190 @@
-export default function ZonaRossaCafeWebsite() {
-  const menuHighlights = [
-    {
-      title: "Chicken Salad",
-      image:
-        "https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=1200&q=80",
-    },
-    {
-      title: "Soup of the Day",
-      image:
-        "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=80",
-    },
-    {
-      title: "Tagine to Order",
-      image:
-        "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1200&q=80",
-    },
-    {
-      title: "Fish Bastilla",
-      subtitle: "Order in advance",
-      image:
-        "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1200&q=80",
-    },
-    {
-      title: "Egg Bacon & Sausage Panini",
-      image:
-        "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1200&q=80",
-    },
-    {
-      title: "Omelette, Avocado Toast & Salad",
-      image:
-        "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1200&q=80",
-    },
-    {
-      title: "Maajoon Shake",
-      subtitle: "Dates, banana, coconut milk & raw organic maca",
-      image:
-        "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?auto=format&fit=crop&w=1200&q=80",
-    },
-    {
-      title: "Barista Coffee",
-      image:
-        "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80",
-    },
-    {
-      title: "Fresh Sandwiches",
-      image:
-        "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=1200&q=80",
-    },
-  ];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zona Rossa Cafe</title>
 
-  const smoothies = [
-    "Maajoon Banana Dates",
-    "Super Green Detox",
-    "Antioxidant Berries",
-    "Immune Booster",
-    "Booster Beets",
-    "Banana Ashwagandha",
-    "Sunrise Grapefruit",
-  ];
-
-  const reviews = [
-    {
-      name: "Sara Hernández",
-      text: "Really good portions! The prices are good and the service is amazing!",
-    },
-    {
-      name: "Ho Pong To",
-      text: "The staff is friendly and the food is quite tasty.",
-    },
-    {
-      name: "Shan Miah",
-      text: "Really enjoyed my sandwich and coffee today, happy this place has reopened!",
-    },
-  ];
-
-  return (
-    <div className="min-h-screen bg-[#f6f1ea] text-[#1b1b1b]">
-      <section className="relative overflow-hidden bg-[#2b121f] text-white">
-        <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(43,18,31,0.96),rgba(92,19,62,0.9))]" />
-        <div className="absolute inset-y-0 right-0 hidden w-1/2 bg-[linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02))] lg:block" />
-        <div className="relative mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24">
-          <div className="grid gap-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
-            <div>
-              <p className="mb-5 inline-flex rounded-full border border-white/20 bg-white/8 px-4 py-1.5 text-sm tracking-wide text-white/90">
-                Coffee • Smoothies • Sandwiches • Home-Cooked Food
-              </p>
-              <h1 className="max-w-3xl text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
-                A welcoming neighbourhood café at The Castle Centre
-              </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-[#f1dde7]">
-                Zona Rossa Cafe brings together barista-made coffee, vibrant smoothies,
-                fresh food, and a warm local atmosphere in the heart of Elephant & Castle.
-              </p>
-
-              <div className="mt-8 flex flex-wrap gap-4">
-                <a
-                  href="#visit"
-                  className="rounded-2xl bg-[#e9c46a] px-6 py-3.5 font-semibold text-[#2b121f] shadow-lg transition hover:scale-[1.02]"
-                >
-                  Visit the Cafe
-                </a>
-                <a
-                  href="#menu"
-                  className="rounded-2xl border border-white/25 px-6 py-3.5 font-semibold text-white transition hover:bg-white/10"
-                >
-                  Explore the Menu
-                </a>
-              </div>
-
-              <div className="mt-10 grid gap-4 sm:grid-cols-3">
-                <div className="rounded-2xl border border-white/12 bg-white/8 p-5">
-                  <p className="text-sm uppercase tracking-wide text-white/70">Rating</p>
-                  <p className="mt-2 text-2xl font-bold">4.9 / 5</p>
-                </div>
-                <div className="rounded-2xl border border-white/12 bg-white/8 p-5">
-                  <p className="text-sm uppercase tracking-wide text-white/70">Price range</p>
-                  <p className="mt-2 text-2xl font-bold">£1–10</p>
-                </div>
-                <div className="rounded-2xl border border-white/12 bg-white/8 p-5">
-                  <p className="text-sm uppercase tracking-wide text-white/70">Open today</p>
-                  <p className="mt-2 text-2xl font-bold">Until 6:30 pm</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="grid gap-4">
-              <div className="overflow-hidden rounded-[28px] border border-white/10 bg-[#180a12] p-3 shadow-2xl">
-                <img
-                  src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1600&q=80"
-                  alt="Cafe interior"
-                  className="h-[360px] w-full rounded-[22px] object-cover lg:h-[420px]"
-                />
-              </div>
-              <div className="grid gap-4 sm:grid-cols-2">
-                <div className="rounded-3xl border border-white/10 bg-white/8 p-5 backdrop-blur-sm">
-                  <p className="text-sm uppercase tracking-[0.18em] text-[#e9c46a]">Signature feel</p>
-                  <h3 className="mt-3 text-2xl font-semibold">Bold, warm, and full of character</h3>
-                  <p className="mt-3 leading-7 text-white/75">
-                    Inspired by the café’s burgundy walls, black menu boards, and natural wood details.
-                  </p>
-                </div>
-                <div className="rounded-3xl border border-white/10 bg-white/8 p-5 backdrop-blur-sm">
-                  <p className="text-sm uppercase tracking-[0.18em] text-[#e9c46a]">Popular picks</p>
-                  <ul className="mt-3 space-y-2 text-white/85">
-                    <li>Maajoon smoothies</li>
-                    <li>Paninis & sandwiches</li>
-                    <li>Barista coffee</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
-        <div className="grid gap-8 lg:grid-cols-3">
-          <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-[#eadfd4]">
-            <h2 className="text-2xl font-bold text-[#251a16]">About Zona Rossa</h2>
-            <p className="mt-4 leading-7 text-[#6b5b51]">
-              Located in the main reception hall of The Castle Centre, Zona Rossa Cafe
-              is designed for everyday convenience, whether you are grabbing a coffee,
-              refuelling after a workout, or sitting down for a fresh meal.
-            </p>
-          </div>
-
-          <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-[#eadfd4]">
-            <h2 className="text-2xl font-bold text-[#251a16]">Interior-Led Identity</h2>
-            <p className="mt-4 leading-7 text-[#6b5b51]">
-              The visual direction reflects the real space: deep burgundy walls,
-              black chalkboard-style menus, warm timber accents, and a simple,
-              community-focused setup.
-            </p>
-          </div>
-
-          <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-[#eadfd4]">
-            <h2 className="text-2xl font-bold text-[#251a16]">What Sets It Apart</h2>
-            <p className="mt-4 leading-7 text-[#6b5b51]">
-              Affordable pricing, generous portions, smoothies alongside café classics,
-              and a friendly local energy that feels approachable rather than overdesigned.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-[#f0e5dc] py-16">
-        <div className="mx-auto max-w-7xl px-6 lg:px-10">
-          <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-            <div className="overflow-hidden rounded-[30px] bg-white p-3 shadow-sm ring-1 ring-[#e1d2c5]">
-              <img
-                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80"
-                alt="Coffee and pastries"
-                className="h-[430px] w-full rounded-[24px] object-cover"
-              />
-            </div>
-
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8a234b]">
-                Drinks spotlight
-              </p>
-              <h2 className="mt-3 text-4xl font-bold tracking-tight text-[#251a16]">
-                Smoothies and coffee that fit the space perfectly
-              </h2>
-              <p className="mt-4 max-w-2xl leading-7 text-[#6b5b51]">
-                The café’s menu identity is strongly built around smoothies, hot drinks,
-                and quick fresh food. This section gives the site a more authentic feel
-                by reflecting what customers actually see inside.
-              </p>
-
-              <div className="mt-8 grid gap-3 sm:grid-cols-2">
-                {smoothies.map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-2xl border border-[#e1d2c5] bg-white px-4 py-3 text-[#3d2b24] shadow-sm"
-                  >
-                    {item}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="menu" className="py-16">
-        <div className="mx-auto max-w-7xl px-6 lg:px-10">
-          <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8a234b]">
-              Menu highlights
-            </p>
-            <h2 className="mt-3 text-4xl font-bold tracking-tight text-[#251a16]">
-              Fresh, hearty, and made for everyday regulars
-            </h2>
-            <p className="mt-4 leading-7 text-[#6b5b51]">
-              A practical menu built around café favourites, smoothies, breakfast items,
-              and home-style comfort food.
-            </p>
-          </div>
-
-          <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {menuHighlights.map((item) => (
-              <div
-                key={item.title}
-                className="overflow-hidden rounded-[28px] bg-white shadow-sm ring-1 ring-[#eadfd4] transition hover:-translate-y-1"
-              >
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="h-56 w-full object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-[#251a16]">{item.title}</h3>
-                  {item.subtitle && (
-                    <p className="mt-1 text-sm text-[#8a234b]">{item.subtitle}</p>
-                  )}
-                  <p className="mt-3 text-[#6b5b51]">
-                    Ask in-store for availability and daily specials.
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
-        <div className="grid gap-8 lg:grid-cols-2">
-          <div className="rounded-[30px] bg-[#3a121f] p-8 text-white shadow-xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e9c46a]">
-              Customer trust
-            </p>
-            <h2 className="mt-3 text-3xl font-bold">A well-loved local café experience</h2>
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              <div className="rounded-2xl bg-white/8 p-5">
-                <p className="text-3xl font-bold">4.9/5</p>
-                <p className="mt-1 text-white/70">Average rating</p>
-              </div>
-              <div className="rounded-2xl bg-white/8 p-5">
-                <p className="text-3xl font-bold">37</p>
-                <p className="mt-1 text-white/70">Google reviews</p>
-              </div>
-              <div className="rounded-2xl bg-white/8 p-5 sm:col-span-2">
-                <p className="text-lg font-semibold">Friendly service, good portions, strong local appeal</p>
-                <p className="mt-2 text-white/75">
-                  The messaging stays simple and credible, matching the real-world café experience.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="space-y-4">
-            {reviews.map((review) => (
-              <div
-                key={review.name}
-                className="rounded-[28px] bg-white p-6 shadow-sm ring-1 ring-[#eadfd4]"
-              >
-                <p className="text-lg leading-7 text-[#45362f]">“{review.text}”</p>
-                <p className="mt-4 font-semibold text-[#251a16]">— {review.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="visit" className="bg-[#f0e5dc] py-16">
-        <div className="mx-auto max-w-7xl px-6 lg:px-10">
-          <div className="grid gap-8 lg:grid-cols-[1fr_1fr]">
-            <div className="rounded-[30px] bg-[#201514] p-8 text-white shadow-xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#e9c46a]">
-                Visit us
-              </p>
-              <h2 className="mt-3 text-3xl font-bold">Find Zona Rossa Cafe at The Castle Centre</h2>
-              <div className="mt-6 space-y-4 text-[#d7c6bc]">
-                <p>
-                  <span className="font-semibold text-white">Address:</span> The Castle Centre, 2 St Gabriel Walk, London SE1 6FG
-                </p>
-                <p>
-                  <span className="font-semibold text-white">Inside:</span> Main reception hall, The Castle Centre
-                </p>
-                <p>
-                  <span className="font-semibold text-white">Hours:</span> Open · Closes 6:30 pm
-                </p>
-                <p>
-                  <span className="font-semibold text-white">Price per person:</span> £1–10
-                </p>
-              </div>
-
-              <div className="mt-8 flex flex-wrap gap-4">
-                <a
-                  href="https://maps.google.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="rounded-2xl bg-[#e9c46a] px-6 py-3.5 font-semibold text-[#2b121f] transition hover:scale-[1.02]"
-                >
-                  Get Directions
-                </a>
-                <a
-                  href="#"
-                  className="rounded-2xl border border-white/20 px-6 py-3.5 font-semibold text-white/90"
-                >
-                  Call the Cafe
-                </a>
-              </div>
-            </div>
-
-            <div className="overflow-hidden rounded-[30px] bg-white p-3 shadow-sm ring-1 ring-[#e1d2c5]">
-              <img
-                src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=1600&q=80"
-                alt="Cafe table with food and coffee"
-                className="h-full min-h-[420px] w-full rounded-[24px] object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer className="border-t border-[#eadfd4] bg-[#f6f1ea]">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-[#6b5b51] lg:flex-row lg:items-center lg:justify-between lg:px-10">
-          <p>© 2026 Zona Rossa Cafe. All rights reserved.</p>
-          <div className="flex gap-4">
-            <a href="#menu" className="hover:text-[#251a16]">Menu</a>
-            <a href="#visit" className="hover:text-[#251a16]">Visit</a>
-            <a href="#" className="hover:text-[#251a16]">Instagram</a>
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
+<style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f6f1ea;
+  color:#1b1b1b;
 }
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(43,18,31,0.85), rgba(43,18,31,0.95)),
+  url('https://images.unsplash.com/photo-1554118811-1e0d58224f24');
+  background-size: cover;
+  background-position: center;
+  color:white;
+  padding:100px 20px;
+  text-align:center;
+}
+
+.hero h1 {
+  font-size:48px;
+  margin-bottom:10px;
+}
+
+.hero p {
+  font-size:18px;
+  max-width:600px;
+  margin:auto;
+}
+
+.btn {
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 24px;
+  background:#e9c46a;
+  color:#2b121f;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:bold;
+}
+
+/* SECTIONS */
+.section {
+  padding:60px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+h2 {
+  margin-bottom:20px;
+}
+
+/* GRID */
+.grid {
+  display:grid;
+  gap:20px;
+}
+
+.grid-3 {
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+
+/* CARD */
+.card {
+  background:white;
+  padding:15px;
+  border-radius:12px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.card img {
+  width:100%;
+  border-radius:10px;
+}
+
+/* DARK SECTION */
+.dark {
+  background:#3a121f;
+  color:white;
+}
+
+/* FOOTER */
+footer {
+  text-align:center;
+  padding:20px;
+  background:#eee;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Zona Rossa Cafe</h1>
+  <p>Coffee, smoothies & fresh food in Elephant & Castle</p>
+  <a href="#visit" class="btn">Visit Us</a>
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+  <h2>About Zona Rossa</h2>
+  <p>
+    Located inside The Castle Centre, Zona Rossa Cafe is perfect for coffee,
+    smoothies and quick fresh meals before or after your workout.
+  </p>
+</div>
+
+<!-- DRINKS -->
+<div class="section">
+  <h2>Smoothies & Drinks</h2>
+  <div class="grid grid-3">
+    <div class="card">Maajoon Banana Dates</div>
+    <div class="card">Super Green Detox</div>
+    <div class="card">Antioxidant Berries</div>
+    <div class="card">Immune Booster</div>
+    <div class="card">Booster Beets</div>
+    <div class="card">Banana Ashwagandha</div>
+  </div>
+</div>
+
+<!-- MENU -->
+<div class="section">
+  <h2>Menu Highlights</h2>
+  <div class="grid grid-3">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1">
+      <h3>Chicken Salad</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1547592180-85f173990554">
+      <h3>Soup of the Day</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f">
+      <h3>Tagine</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af">
+      <h3>Panini</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+      <h3>Barista Coffee</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1553909489-cd47e0907980">
+      <h3>Fresh Sandwiches</h3>
+    </div>
+
+  </div>
+</div>
+
+<!-- REVIEWS -->
+<div class="section dark">
+  <h2>Customer Reviews</h2>
+  <p>⭐ 4.9 / 5 rating</p>
+
+  <p>“Really good portions! The service is amazing!”</p>
+  <p>“Friendly staff and tasty food.”</p>
+  <p>“Loved my sandwich and coffee!”</p>
+</div>
+
+<!-- VISIT -->
+<div class="section" id="visit">
+  <h2>Visit Us</h2>
+  <p>The Castle Centre, 2 St Gabriel Walk, London SE1 6FG</p>
+  <p>Open · Closes 6:30 pm</p>
+</div>
+
+<footer>
+  © 2026 Zona Rossa Cafe
+</footer>
+
+</body>
+</html>
